@@ -13,7 +13,7 @@ RUN echo "ServerName localhost" >>/etc/apache2/apache2.conf
 EXPOSE 80
 
 #copy index.html
-COPY index.html /var/www/index.html
+COPY index.html /var/www/html/index.html
 
 # startup script
 COPY start.sh /start.sh
