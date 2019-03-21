@@ -6,3 +6,15 @@ For running docker run ./docker_run.sh container-name
 
 Check http://localhost:8080
 
+
+For stoping the docker 
+
+docker ps  -->getting running docker information
+
+docker stop CONTAINER ID
+
+
+
+
+
+
