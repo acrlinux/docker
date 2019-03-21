@@ -14,7 +14,7 @@ docker ps  -->getting running docker information
 docker stop CONTAINER ID
 
 
+For creating docker image run create_docker_image.sh
 
-
-
+For loading existing docker image run load_docker_image.sh
 
