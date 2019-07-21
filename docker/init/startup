@@ -3,6 +3,8 @@
 # System Startup Script
 # 
 
+export PATH=$PATH:/etc/init.d
+
 echo "Runnig startup script"
 
 umask 022

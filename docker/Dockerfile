@@ -12,6 +12,9 @@ RUN echo "ServerName localhost" >>/etc/apache2/apache2.conf
  
 EXPOSE 80
 
+#copy shutdown script
+COPY init/shutdown  /etc/init.d/shutdown
+
 RUN ln -s /etc/init.d/apache2 /etc/rcS.d/S01apache2
 
 #copy index.html
