@@ -12,12 +12,15 @@ RUN echo "ServerName localhost" >>/etc/apache2/apache2.conf
  
 EXPOSE 80
 
+RUN ln -s /etc/init.d/apache2 /etc/rcS.d/S01apache2
+
 #copy index.html
 COPY index.html /var/www/html/index.html
 
 # startup script
-COPY start.sh /start.sh
-CMD ["./start.sh"]
+COPY init/startup /startup
+
+CMD ["./startup"]
 
 
 
